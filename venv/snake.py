@@ -33,6 +33,7 @@ class Snake:
             self.segments[seg_num].goto(new_x, new_y)
         self.segments[0].forward(20)
         # segments[0].left(90)
+        '''Moving snake head & block to move in opposite direction instantly'''
     def up(self):
         if self.head.heading() != DOWN:
             self.head.setheading(UP)
