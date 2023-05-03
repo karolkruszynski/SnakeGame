@@ -27,3 +27,11 @@ class Snake:
             self.segments[seg_num].goto(new_x, new_y)
         self.segments[0].forward(20)
         # segments[0].left(90)
+    def up(self):
+        self.segments[0].setheading(90)
+    def down(self):
+        pass
+    def left(self):
+        pass
+    def right(self):
+        pass
