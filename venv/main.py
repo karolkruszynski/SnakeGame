@@ -11,6 +11,7 @@ segments = []
 pos_x = 0
 pos_y = 0
 
+'''Create a 3pc snake base and append to the segments list'''
 for segment in range(0,3):
     new_segment = Turtle(shape="square")
     new_segment.color("white")
@@ -21,6 +22,7 @@ for segment in range(0,3):
 
 game_is_on = True
 
+'''Make a Snake move and linked every piece and make them replace the previouse piece position'''
 while game_is_on:
     screen.update()
     time.sleep(0.1)
