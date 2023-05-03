@@ -10,6 +10,12 @@ screen.tracer(0)
 
 snake = Snake()
 
+screen.listen()
+screen.onkey(snake.up,"Up")
+screen.onkey("Down")
+screen.onkey("Left")
+screen.onkey("Right")
+
 game_is_on = True
 
 while game_is_on:
