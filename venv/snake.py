@@ -1,9 +1,6 @@
 from turtle import Screen, Turtle
 import time
 
-
-
-
 class Snake:
 
     '''Create a 3pc snake base and append to the segments list'''
