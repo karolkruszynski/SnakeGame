@@ -9,7 +9,7 @@ class Scoreboard(Turtle):
         self.color("white")
         self.penup()
         self.hideturtle()
-        self.goto(0,280)
+        self.goto(0,260)
         self.write(f"Score: {self.score}",False,align=ALIGNMENT,font=FONT)
         
     def score_track(self):
