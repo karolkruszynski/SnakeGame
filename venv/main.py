@@ -32,5 +32,8 @@ while game_is_on:
         food.refresh()
         scoreboard.score += 1
         scoreboard.score_track()
+        
+    #Detect collision with wall.
+    
 
 screen.exitonclick()
