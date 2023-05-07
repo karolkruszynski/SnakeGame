@@ -1,6 +1,7 @@
 from turtle import Screen, Turtle
 import time
 
+STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
 UP = 90
 DOWN = 270
 LEFT = 180
@@ -11,22 +12,19 @@ class Snake:
     '''Create a 3pc snake base and append to the segments list'''
     def __init__(self):
         self.segments = []
-        self.pos_x = 0
-        self.pos_y = 0
         self.create_snake()
         self.head = self.segments[0]
 
     def create_snake(self):
-        for segment in range(0,3):
+        for position in STARTING_POSITIONS:
             self.add_segment(position)
 
     def add_segment(self, position):
         new_segment = Turtle(shape="square")
         new_segment.color("white")
         new_segment.penup()
-        new_segment.setposition(x=self.pos_x, y=self.pos_y)
+        new_segment.goto(position)
         self.segments.append(new_segment)
-        self.pos_x -= 20
 
     def extend(self):
         self.add_segment(self.segments[-1].position())
